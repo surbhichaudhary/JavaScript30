@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="day1" id="boxes">
+        <div class="btn" id = "clap" onmouseover="play(this.id);">
+            <kbd class="t1">A</kbd>
+            <br>
+            <span class="t2">CLAP</span>
+        </div>
+        <div class="btn" id = "hihat" onmouseover="play(this.id);">
+            <kbd class="t1">S</kbd>
+            <br>
+            <span class="t2">HIHAT</span>
+        </div>
+        <div class="btn" id = "kick" onmouseover="play(this.id);">
+            <kbd class="t1">D</kbd>
+            <br>
+            <span class="t2">KICK</span>
+        </div>
+        <div class="btn" id = "openhat" onmouseover="play(this.id);">
+            <kbd class="t1">F</kbd>
+            <br>
+            <span class="t2">OPENHAT</span>
+        </div>
+        <div class="btn" id = "boom" onmouseover="play(this.id);">
+            <kbd class="t1">G</kbd>
+            <br>
+            <span class="t2">BOOM</span>
+        </div>
+        <div class="btn" id = "ride" onmouseover="play(this.id);">
+            <kbd class="t1">H</kbd>
+            <br>
+            <span class="t2">RIDE</span>
+        </div>
+        <div class="btn" id = " snare" onmouseover="play(this.id);">
+            <kbd class="t1">J</kbd>
+            <br>
+            <span class="t2">SNARE</span>
+        </div>
+        <div class="btn" id = "tom" onmouseover="play(this.id);">
+            <kbd class="t1">K</kbd>
+            <br>
+            <span class="t2">TOM</span>
+        </div>
+        <div class="btn" id = "tink" onmouseover="play(this.id);">
+            <kbd class="t1">L</kbd>
+            <br>
+            <span class="t2">TINK</span>
+        </div>
+    </div>
+
+    <script src="index.js" charset="UTF-8">
+        function myFunction(current) {
+            var audio = new Audio("sounds/a1.mp3");
+            audio.play();
+
+            setTimeout(function () {
+                audio.pause();
+            }, 2000);
+        }
+
+
+    </script>
+</body>
+</html>
